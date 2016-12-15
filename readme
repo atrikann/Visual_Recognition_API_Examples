@@ -1,0 +1,76 @@
+
+a. custom_classifier.sh // add new positive and negative classes to it.
+        -F "beagle_positive_examples=@beagle.zip" -F "husky_positive_examples=@husky.zip"  -F "negative_examples=@cats.zip"
+    . ./envvars
+    echo ${api_key}
+
+    curl -X POST -F "images_file=@rightimage_sample.png" -F "parameters=@myparams.json" "https://gateway-a.watsonplatform.net/visual-recognition/api/v3/classify?api_key=${api_key}&version=2016-05-20"
+
+
+
+
+b. check_training_status.sh  
+
+    c(a).  classify_image.sh - classify an image         OR   detect_faces.sh
+            - identify the image
+            - detect which class and so on.
+
+    c(b) - detect_faces.sh
+
+
+c. delete_classifier.sh
+
+d.list_classifiers.sh
+
+
+example of training_status
+
+		shashikiran:Visual_Recognition_API_Examples shashikiran$ ./check_training_status.sh 
+		2ad1de1d6651cba0046f8b4d7056d6d9ae61f53e
+		{
+		    "classifier_id": "dogs_240103729",
+		    "name": "dogs",
+		    "owner": "a01f7f63-e008-4544-9164-b325c460635d",
+		    "status": "ready",
+		    "created": "2016-12-10T15:42:40.667Z",
+		    "classes": [
+		        {"class": "husky"},
+		        {"class": "goldenretriever"},
+		        {"class": "beagle"}
+		    ]
+		}
+
+delete_classifiers.sh
+--
+for lawn.png
+
+
+{
+    "custom_classes": 3,
+    "images": [
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "grass",
+                            "score": 0.908877,
+                            "type_hierarchy": "/animals/plants/grass"
+                        },
+                        {
+                            "class": "green",
+                            "score": 0.802184,
+                            "type_hierarchy": "/colors/green"
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "lawn.png"
+        }
+    ],
+    "images_processed": 1
+}
+
+

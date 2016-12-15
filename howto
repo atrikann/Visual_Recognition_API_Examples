@@ -1,0 +1,59 @@
+# By using the myparams.json parameter
+
+{
+    "custom_classes": 2,
+    "images": [
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "grass",
+                            "score": 0.908877,
+                            "type_hierarchy": "/animals/plants/grass"
+                        },
+                        {
+                            "class": "green",
+                            "score": 0.802184,
+                            "type_hierarchy": "/colors/green"
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "lawn.png"
+        }
+    ],
+    "images_processed": 1
+}
+
+# Without using the myparams.json parameter
+{
+    "custom_classes": 0,
+    "images": [
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "grass",
+                            "score": 0.908877,
+                            "type_hierarchy": "/animals/plants/grass"
+                        },
+                        {
+                            "class": "green",
+                            "score": 0.802184,
+                            "type_hierarchy": "/colors/green"
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "lawn.png"
+        }
+    ],
+    "images_processed": 1
+}
+

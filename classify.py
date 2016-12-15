@@ -19,8 +19,14 @@ visual_recognition = VisualRecognitionV3('2016-05-20', api_key='2ad1de1d6651cba0
 #with open(join(dirname(__file__), 'car.jpg'), 'rb') as image_file:
 #    print(json.dumps(visual_recognition.classify(images_file=image_file),indent=2))
 
-with open(join(dirname(__file__), 'indianprez.jpg'), 'rb') as image_file:
-    print(json.dumps(visual_recognition.classify(images_file=image_file),indent=2))
+#with open(join(dirname(__file__), 'indianprez.jpg'), 'rb') as image_file:
+#    print(json.dumps(visual_recognition.classify(images_file=image_file),indent=2))
+
+with open(join(dirname(__file__), '../resources/trucks.zip'), 'rb') as trucks, \
+      open(join(dirname(__file__), '../resources/cars.zip'), 'rb') as cars:
+   print(json.dumps(visual_recognition.create_classifier('CarsvsTrucks', trucks_positive_examples=trucks, negative_examples=cars), indent=2))
+
+#print(json.dumps(visual_recognition.classify(images_file='./indianprez.jpg'), indent=2))
 
 #with open(join(dirname(__file__), 'photo.jpg'), 'rb') as image_file:
 #    print(json.dumps(visual_recognition.detect_faces(images_file=image_file), indent=2))
