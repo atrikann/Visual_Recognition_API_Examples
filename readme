@@ -9,20 +9,24 @@ e.g:
     curl -X POST -F "images_file=@rightimage_sample.png" -F "parameters=@myparams.json" "https://gateway-a.watsonplatform.net/visual-recognition/api/v3/classify?api_key=${api_key}&version=2016-05-20"
 
 
-
-
 b. check_training_status.sh  
+    Do this after you have done the training - and check for the "ready" status.
+    ( see some examples below )
 
-    c(a).  classify_image.sh - classify an image         OR   detect_faces.sh
+
+c(a).  classify_image.sh - classify an image         OR   detect_faces.sh
             - identify the image
             - detect which class and so on.
 
-    c(b) - detect_faces.sh
+c(b) - detect_faces.sh
 
 
-c. delete_classifier.sh
+d. delete_classifier.sh
+    If you ever want to delete the library that you created for reference.
 
-d.list_classifiers.sh
+e. list_classifiers.sh
+
+    -List all the classifiers that you have created so far.
 
 
 example of training_status
@@ -74,5 +78,3 @@ for lawn.png
     ],
     "images_processed": 1
 }
-
-
