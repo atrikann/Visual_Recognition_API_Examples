@@ -13,5 +13,5 @@ Once this is done - then check if the training is done by issuing a REST call an
 
 Later, feed in the reference image and let the Watson Visual Recognition Engine check if the image exists in the library and return a score. Higher the score -higher the likeliness that this will match the one in the library.
 
-
 Look at readme file in this repo - for the starter scripts.
+

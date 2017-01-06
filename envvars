@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export api_key="2ad1de1d6651cba0046f8b4d7056d6d9ae61f53e"
+export api_key="03884318f81782ff1a98cd1de04f29322c7dfc8b"
 
 
 #echo ${api_key}
