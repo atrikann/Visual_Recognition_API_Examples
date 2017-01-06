@@ -1,8 +1,10 @@
 
-a. custom_classifier.sh // add new positive and negative classes to it.
-        -F "beagle_positive_examples=@beagle.zip" -F "husky_positive_examples=@husky.zip"  -F "negative_examples=@cats.zip"
-    . ./envvars
-    echo ${api_key}
+# At this time I am assuming that you have go thru the Visual Recognition Demo/module/trainings etc.
+
+a. custom_classifier.sh // add new positive and negative classes to the library.
+
+e.g:
+    curl -X POST -F "beagle_positive_examples=@beagle.zip" -F "dalmation_positive_examples=@dalmation.zip" -F "husky_positive_example=@husky.zip" -F "negative_examples=@cats.zip" -F "name=dogs" "https://gateway-a.watsonplatform.net/visual-recognition/api/v3/classifiers?api_key={api-key}&version=2016-05-20"
 
     curl -X POST -F "images_file=@rightimage_sample.png" -F "parameters=@myparams.json" "https://gateway-a.watsonplatform.net/visual-recognition/api/v3/classify?api_key=${api_key}&version=2016-05-20"
 
