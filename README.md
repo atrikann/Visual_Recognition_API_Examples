@@ -41,3 +41,8 @@ Some snapshot when I was experimenting with the tools.
 
 <img width="1099" alt="screen shot 2017-01-06 at 12 24 19 pm" src="https://cloud.githubusercontent.com/assets/14288989/21709948/33382d2c-d40b-11e6-9f27-93d26166922e.png">
 
+
+<img width="248" alt="screen shot 2017-01-06 at 12 27 27 pm" src="https://cloud.githubusercontent.com/assets/14288989/21709986/95d48840-d40b-11e6-8e4e-3c287dd8d5c7.png">
+
+
+<img width="248" alt="screen shot 2017-01-06 at 12 27 08 pm" src="https://cloud.githubusercontent.com/assets/14288989/21709987/95d7ec6a-d40b-11e6-819b-5ac2bde7c7fe.png">
