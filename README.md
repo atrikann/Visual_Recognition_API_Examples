@@ -58,6 +58,17 @@ This is not about the exact match - but likeliness of the image being matched in
 
 The myparams.json - can have another classifier called "default" - i.e the VR Engine's default library, 
 
+One key concept is inclusion of the threshold argument when making the REST API.
+
+Understanding the contents of myparams.json is important when classifying ( interpreting ) the images.
+
+The importance of "threshold" is well documented by the VR technicians in this article.
+
+( we have to be selective about including the "default" classifier, in the myparams.json )
+
+https://developer.ibm.com/answers/questions/327301/classify-against-default-class-and-custom-class-in/
+
+
 
 <img width="1099" alt="screen shot 2017-01-06 at 12 10 36 pm" src="https://cloud.githubusercontent.com/assets/14288989/21709705/2c51358c-d409-11e6-9773-50d096b5dfd9.png">
 
